@@ -44,12 +44,12 @@ next.addEventListener('click', function(){
     changeImage('-');
 })  
 
-let x;
+let timer;
 
 let slideshow = function(interval = 2000) {
     changeImage('+');
  //   setInterval(changeImage('+'), interval);
-   x = setTimeout(slideshow, interval);
+   timer = setTimeout(slideshow, interval);
 }
 
 slideshow(2000);
@@ -57,7 +57,7 @@ slideshow(2000);
 
 let stopSlide = document.querySelector('img');
 stopSlide.addEventListener('mouseover', function(){
-    clearTimeout(x);
+    document.querySelector('');
 })
 stopSlide.addEventListener('mouseout', function(){
     slideshow(2000);
